@@ -1,0 +1,57 @@
+/* app.component.css */
+.container-fluid {
+    height: 100vh;
+  }
+  
+  .row {
+    min-height: 100%;
+  }
+  
+  .col-2 {
+    background-color: #343a40;
+    height: 100%;
+  }
+  
+  .col-10 {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .content-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    height: calc(100vh - 56px); /* Ensure content doesn't overlap with navbar */
+    overflow-y: auto;
+  }
+  
+  app-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  app-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 90;
+  }
+  
+  .app-container {
+      display: flex;
+    }
+    
+    .content-area {
+      flex: 1;
+      padding: 20px;
+      margin-left: 280px;
+      transition: margin-left 0.3s ease;
+    }
+    
+    @media (max-width: 991.98px) {
+      .content-area {
+        margin-left: 80px;
+      }
+    }
